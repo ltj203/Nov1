@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CEA3A2F9164B142F0035AB57 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CEA3A2F8164B142F0035AB57 /* Icon.png */; };
+		CEA3A2FC164B143C0035AB57 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CEA3A2FB164B143C0035AB57 /* Icon@2x.png */; };
 		CEE5664C1642CEBA00052C89 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEE5664B1642CEBA00052C89 /* UIKit.framework */; };
 		CEE5664E1642CEBA00052C89 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEE5664D1642CEBA00052C89 /* Foundation.framework */; };
 		CEE566501642CEBA00052C89 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEE5664F1642CEBA00052C89 /* CoreGraphics.framework */; };
@@ -16,9 +18,12 @@
 		CEE5665E1642CEBA00052C89 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = CEE5665D1642CEBA00052C89 /* Default.png */; };
 		CEE566601642CEBA00052C89 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CEE5665F1642CEBA00052C89 /* Default@2x.png */; };
 		CEE566621642CEBA00052C89 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CEE566611642CEBA00052C89 /* Default-568h@2x.png */; };
+		CEE5666A1642CF8E00052C89 /* View.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE566691642CF8E00052C89 /* View.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CEA3A2F8164B142F0035AB57 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		CEA3A2FB164B143C0035AB57 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 		CEE566471642CEBA00052C89 /* Nov1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nov1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEE5664B1642CEBA00052C89 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		CEE5664D1642CEBA00052C89 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -32,6 +37,8 @@
 		CEE5665D1642CEBA00052C89 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		CEE5665F1642CEBA00052C89 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		CEE566611642CEBA00052C89 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		CEE566681642CF8E00052C89 /* View.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = View.h; sourceTree = "<group>"; };
+		CEE566691642CF8E00052C89 /* View.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = View.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +87,8 @@
 			children = (
 				CEE5665A1642CEBA00052C89 /* Nov1AppDelegate.h */,
 				CEE5665B1642CEBA00052C89 /* Nov1AppDelegate.m */,
+				CEE566681642CF8E00052C89 /* View.h */,
+				CEE566691642CF8E00052C89 /* View.m */,
 				CEE566521642CEBA00052C89 /* Supporting Files */,
 			);
 			path = Nov1;
@@ -93,6 +102,8 @@
 				CEE566571642CEBA00052C89 /* main.m */,
 				CEE566591642CEBA00052C89 /* Nov1-Prefix.pch */,
 				CEE5665D1642CEBA00052C89 /* Default.png */,
+				CEA3A2FB164B143C0035AB57 /* Icon@2x.png */,
+				CEA3A2F8164B142F0035AB57 /* Icon.png */,
 				CEE5665F1642CEBA00052C89 /* Default@2x.png */,
 				CEE566611642CEBA00052C89 /* Default-568h@2x.png */,
 			);
@@ -155,6 +166,8 @@
 				CEE5665E1642CEBA00052C89 /* Default.png in Resources */,
 				CEE566601642CEBA00052C89 /* Default@2x.png in Resources */,
 				CEE566621642CEBA00052C89 /* Default-568h@2x.png in Resources */,
+				CEA3A2F9164B142F0035AB57 /* Icon.png in Resources */,
+				CEA3A2FC164B143C0035AB57 /* Icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,6 +180,7 @@
 			files = (
 				CEE566581642CEBA00052C89 /* main.m in Sources */,
 				CEE5665C1642CEBA00052C89 /* Nov1AppDelegate.m in Sources */,
+				CEE5666A1642CF8E00052C89 /* View.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +289,7 @@
 				CEE566671642CEBA00052C89 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
