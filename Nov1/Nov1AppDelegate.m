@@ -7,14 +7,19 @@
 //
 
 #import "Nov1AppDelegate.h"
+#import "View.h"
 
 @implementation Nov1AppDelegate
+@synthesize window = _window;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    UIScreen *screen = [UIScreen mainScreen];
+    view = [[View alloc] initWithFrame: screen.applicationFrame];
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
+    //self.window.backgroundColor = [UIColor whiteColor];
+    [self.window addSubview:view];
     [self.window makeKeyAndVisible];
     return YES;
 }
@@ -27,6 +32,7 @@
 
 - (void)applicationDidEnterBackground:(UIApplication *)application
 {
+    [view incrementTZ];
     // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later. 
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
 }
